@@ -10,7 +10,7 @@ output:
 I hope you like dogs too: )
 
 # This is Jiarui's awesome website
-Welcome to Jiarui's website! It's good to see you here! 
+Welcome to Jiarui's website! It's good to see you here!   
 ![](images/giphy.gif)
 
 Click on the link below to find more information about me!  
