@@ -7,10 +7,12 @@ output:
 ---
 
 ![](images/cute_dog.jpg)
-I hope you like dogs too: )
+I hope you like dogs too: )  
+Enjoy browsing through my website and send me feedbacks
 
 # This is Jiarui's awesome website
-Welcome to Jiarui's website! It's good to see you here!   
+Welcome to Jiarui's website! It's good to see you here!
+I made this personal website with what I've learned in my Data Science class.   
 ![](images/giphy.gif)
 
 Click on the link below to find more information about me!  
@@ -18,6 +20,9 @@ Feel free to send me emails and take a look at my GitHub repositories by clickin
 
 # Background and Experience
 ![](images/about_me.jpg)
+
+I recently graduated from University of Southern California with a major in Biomedical Engineering and a minor in Business Finance.   
+Currently, I'm in my first year of pursuing my Master of Science degree in Biostatistics at Columbia University Irving Medical Center.  
 You can learn more about me [here](about.html).
 
 
