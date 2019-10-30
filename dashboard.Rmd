@@ -1,0 +1,78 @@
+---
+title: "My first dashboard" 
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+
+library(tidyverse)
+library(viridis)
+library(p8105.datasets)
+library(plotly)
+```
+
+```{r}
+data("instacart")
+
+set.seed(1)
+
+data(instacart)
+instacart = 
+  instacart %>% 
+  select(reordered, order_dow, order_hour_of_day, days_since_prior_order, product_name, aisle) %>% 
+  mutate(order_dow = as.factor(order_dow),
+         order_dow = recode(order_dow, 
+                            "0" = "Sun", "1" = "Mon", "2" = "Tue", "3" = "Wed", 
+                            "4" = "Thu", "5" = "Fri", "6" = "Sat")) %>% 
+  filter(aisle %in% c("fresh fruits")) %>% 
+  
+sample_n(500)
+```
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Chart A
+
+```{r}
+instacart %>%
+  group_by(product_name) %>% 
+  summarise(reordered_times = sum(reordered)) %>% 
+  filter(reordered_times > 5) %>% 
+  mutate(product_name = fct_reorder(product_name, reordered_times)) %>% 
+  plot_ly(x = ~product_name, y = ~reordered_times, type = "bar") %>% 
+  layout(title = "Number of times that a fresh fruit has been reordered.", xaxis = list(title  = "product name"), yaxis = list(title = "reordered times"))
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart B
+
+```{r}
+instacart %>% 
+  group_by(product_name) %>%
+  mutate(reordered_times = sum(reordered)) %>% 
+  filter(reordered_times > 10) %>%
+  plot_ly(x = ~product_name, y = ~order_hour_of_day, type = "box", color = ~product_name, colors = "Set2") %>% 
+  layout(title = "Hour of the day that a fresh fruit is ordered.", xaxis = list(title  = "product name"), yaxis = list(title = "hour of the day"))
+```
+
+### Chart C
+
+```{r}
+dow_data =
+  instacart %>% 
+  group_by(order_dow) %>% 
+  summarize(reordered_times = sum(reordered)) %>% 
+  filter(reordered_times > 5) 
+
+plot_ly(dow_data, x= ~order_dow, y = ~reordered_times, type = "scatter", mode = "markers") %>% 
+  add_lines(showlegend=FALSE) %>% 
+  layout(title = "Day of the week vs reordered times.", xaxis = list(title  = "day of the week"), yaxis = list(title = "reordered times"))
+```
+
