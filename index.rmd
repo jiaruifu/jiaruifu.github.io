@@ -4,13 +4,13 @@ output:
   html_document:
     toc: true
     toc_float: true
-    theme: cerulean
 ---
 
 # This is Jiarui's awesome website
 Welcome to Jiarui's website! 
 
-# Academic and Professional Experience
+
+# Academic Experience
 You can learn more about me [here](about.html).
 
 # External Links
