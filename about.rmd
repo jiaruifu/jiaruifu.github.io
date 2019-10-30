@@ -6,46 +6,64 @@ output:
     toc_float: true
 ---
 
-Jiarui (Alexa) Fu
+Jiarui (Alexa) Fu  
 (213) 705-0856 • jf3285@cumc.columbia.edu
 
 EDUCATION
+---------
+Columbia University 	  
+New York, NY; Expected May 2021  
+Master of Science, Biostatistics, Mailman School of Public Health           
 
-Columbia University 	  New York, NY      Expected May 2021
-Master of Science, Biostatistics, Mailman School of Public Health                                                          
-University of Southern California	        Los Angeles, CA    May 2019 
-Bachelor of Science, Biomedical Engineering, Viterbi School of Engineering		Minor in Business Finance, Marshall School of Business                                                                Cumulative GPA: 3.58
+University of Southern California | Cumulative GPA: 3.58 	        
+Los Angeles, CA; Graduated May 2019   
+Bachelor of Science, Biomedical Engineering, Viterbi School of Engineering		Minor in Business Finance, Marshall School of Business                      
 
 RELEVANT EXPERIENCE
-Senior Design Project/USC Viterbi School of Engineering 						  Los Angeles, CA
-Team Member 											     January 2019-May 2019
-•	Identified medication non-adherence as a major factor in treatment outcomes, collaborated with project team to design a medical device by proposing potential features and assessing their feasibility
-•	Formulated business model for smart pill rack through researching main stakeholders and regulatory pathways, then pitched the plan to a panel of professors and students 
-•	Designed and built product software and hardware, tested device functionality and demonstrated prototype in the undergrad student design expo
-Children’s Hospital/Computational Imaging of Brain Organization Research Group Lab		Los Angeles, CA Research Assistant	      June 2018-August 2018
-•	Evaluated over 200 patients’ T2-FLAIR MRI images, localized white matter lesions and segmented images from the registration in axial and coronal planes
-•	Compared and amended the MRI segmentation results with pre-randomization consensus by radiologists 
-•	Conducted extensive literature review on white matter hyperintensites, silent cerebral infarcts, normal aging and sickle cell anemia
-Keck School of Medicine of USC/USC Roski Eye Institute		Los Angeles, CA Research Assistant	      May 2017-August 2017
-•	Performed optokinetic tests to measure visual acuity on immunodeficient RCS rats with iPS-RPE transplantation 
-•	Designed a new laboratory testing apparatus examining the close-range eyesight of mice
-•	Monitored the status of and euthanized laboratory rats and mice weekly
+-------------------
+Senior Design Project/USC Viterbi School of Engineering  						  
+Los Angeles, CA; January 2019-May 2019  
+Team Member 											     
+•	Identified medication non-adherence as a major factor in treatment outcomes, collaborated with project team to design a medical device by proposing potential features and assessing their feasibility  
+•	Formulated business model for smart pill rack through researching main stakeholders and regulatory pathways, then pitched the plan to a panel of professors and students  
+•	Designed and built product software and hardware, tested device functionality and demonstrated prototype in the undergrad student design expo  
+
+Children’s Hospital/Computational Imaging of Brain Organization Research Group Lab		
+Los Angeles, CA; June 2018-August 2018  
+Research Assistant  
+•	Evaluated over 200 patients’ T2-FLAIR MRI images, localized white matter lesions and segmented images from the registration in axial and coronal planes  
+•	Compared and amended the MRI segmentation results with pre-randomization consensus by radiologists   
+•	Conducted extensive literature review on white matter hyperintensites, silent cerebral infarcts, normal aging and sickle cell anemia  
+
+Keck School of Medicine of USC/USC Roski Eye Institute		
+Los Angeles, CA; May 2017-August 2017  
+Research Assistant  	      
+•	Performed optokinetic tests to measure visual acuity on immunodeficient RCS rats with iPS-RPE transplantation   
+•	Designed a new laboratory testing apparatus examining the close-range eyesight of mice  
+•	Monitored the status of and euthanized laboratory rats and mice weekly  
 
 ADDITIONAL EXPERIENCE
-  USC Bookstore	    Los Angeles, CA
-Customer Service Representative	    August 2017-January 2018
-•	Worked at the cash register to process customer orders and handle various requests, serving hundreds of customers during each shift
-•	Managed store-wide inventory to ensure optimal customer flow during game day rush hours
-  USC Joint Educational Project	    Los Angeles, CA
-International Cultural Ambassador                                                                                           September 2017-November 2017
-•	Planned and taught two-hour weekly lessons to introduce children in local schools to the culture and traditions of foreign countries
-Preserve Hoh Xil Nature Reserve - International Volunteer Association Program	   Qinghai, China
-Volunteer	    August 2016
-•	Joined routine mountain patrols and installed monitoring devices for the protection of Tibetan antelopes
-•	Fed and took care of the antelope cubs and analyzed their excrements for scientific conservation
+---------------------
+USC Bookstore  	    
+Los Angeles, CA; August 2017-January 2018  
+Customer Service Representative  	    
+•	Worked at the cash register to process customer orders and handle various requests, serving hundreds of customers during each shift  
+•	Managed store-wide inventory to ensure optimal customer flow during game day rush hours  
+
+USC Joint Educational Project  	    
+Los Angeles, CA; September 2017-November 2017    
+International Cultural Ambassador              
+•	Planned and taught two-hour weekly lessons to introduce children in local schools to the culture and traditions of foreign countries  
+
+Preserve Hoh Xil Nature Reserve-International Volunteer Association Program  	
+Qinghai, China; August 2016  
+Volunteer  
+•	Joined routine mountain patrols and installed monitoring devices for the protection of Tibetan antelopes  
+•	Fed and took care of the antelope cubs and analyzed their excrements for scientific conservation  
 
 SKILLS
-Languages: Bilingual in both English and Mandarin
+------
+Languages: Bilingual in both English and Mandarin  
 Computer Skills: Strong Knowledge of Microsoft Office, Access, Excel, Word, PowerPoint, R, Python, MATLAB, SQL, MongoDB, LabVIEW, Multisim, ITK-SNAP, PSPice
 
 
