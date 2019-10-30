@@ -5,9 +5,90 @@ output:
     toc: true
     toc_float: true
 ---
-My name is Jiarui and I make interactive graphs!
+Here are some _interactive graphs_ that I made with plotly!
+
+```{r}
+library(tidyverse)
+library(viridis)
+library(patchwork)
+library(p8105.datasets)
+
+library(plotly)
+```
+
+```{r}
+data("instacart")
+```
+
+```{r}
+set.seed(1)
+
+data(instacart)
+instacart = 
+  instacart %>% 
+  select(reordered, order_dow, order_hour_of_day, days_since_prior_order, product_name, aisle) %>% 
+  mutate(order_dow = as.factor(order_dow),
+         order_dow = recode(order_dow, 
+                            "0" = "Sun", "1" = "Mon", "2" = "Tue", "3" = "Wed", 
+                            "4" = "Thu", "5" = "Fri", "6" = "Sat")) %>% 
+  filter(aisle %in% c("fresh fruits")) %>% 
+  
+sample_n(500)
+```
+
+```{r}
+instacart %>%
+  group_by(product_name) %>% 
+  summarise(reordered_times = sum(reordered)) %>% 
+  filter(reordered_times > 5) %>% 
+  mutate(product_name = fct_reorder(product_name, reordered_times)) %>% 
+  plot_ly(x = ~product_name, y = ~reordered_times, type = "bar") %>% 
+  layout(title = "Number of times that a fresh fruit has been reordered.", xaxis = list(title  = "product name"), yaxis = list(title = "reordered times"))
+
+```
+
+```{r}
+instacart %>% 
+  group_by(product_name) %>%
+  mutate(reordered_times = sum(reordered)) %>% 
+  filter(reordered_times > 5) %>%
+  plot_ly(x = ~product_name, y = ~order_hour_of_day, type = "box", color = ~product_name, colors = "Set2") %>% 
+  layout(title = "Hour of the day that a fresh fruit is ordered.", xaxis = list(title  = "product name"), yaxis = list(title = "hour of the day"))
+```
+
+```{r}
+dow_data =
+  instacart %>% 
+  group_by(order_dow) %>% 
+  summarize(reordered_times = sum(reordered)) %>% 
+  filter(reordered_times > 5) 
+figure1 = 
+  ggplot(dow_data, aes(x = order_dow, y = reordered_times, group = 1, color = order_dow)) + 
+  geom_point(alpha = 0.5) +
+  geom_line() +
+  scale_color_viridis(discrete = TRUE) +
+  theme_classic() +
+  theme(legend.position = "bottom") + 
+  labs(x = "day of the week", y = "reordered times")
+
+hod_data = 
+  instacart %>% 
+  group_by(order_hour_of_day) %>% 
+  summarize(reordered_times = sum(reordered)) %>% 
+  filter(reordered_times > 5) 
+figure2 = 
+  ggplot(hod_data, aes(x = order_hour_of_day, y = reordered_times, group = 1, color = order_hour_of_day)) + 
+  geom_point(alpha = 0.5) +
+  geom_line() + 
+  scale_color_viridis() +
+  theme_classic() +
+  theme(legend.position = "bottom") +
+  labs(x = "hour of the day", y = "reordered times")
+  
+figure = figure1 + figure2 + plot_layout(ncol = 2)
+figure
+
+ggplotly(figure)
 
 
-
-
-
+```
