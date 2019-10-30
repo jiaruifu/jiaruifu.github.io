@@ -1,5 +1,5 @@
 ---
-title: "My awesome website"
+title: "Jiarui Fu's Personal Website"
 output: 
   html_document:
     toc: true
@@ -7,6 +7,13 @@ output:
     theme: cerulean
 ---
 
-# This is Jeff's awesome website
+# This is Jiarui's awesome website
+Welcome to Jiarui's website! 
 
-![](https://media.giphy.com/media/drXGoW1iudhKw/giphy.gif)
+# Academic and Professional Experience
+You can learn more about me [here](about.html).
+
+# External Links
+Click here for my GitHub account. 
+Also, you can send me emails!
+
